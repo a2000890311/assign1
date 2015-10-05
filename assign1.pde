@@ -1,3 +1,5 @@
+
+// PImg
 PImage FT;
 PImage EM;
 PImage TS;
@@ -5,11 +7,10 @@ PImage HP;
 PImage bg1;
 PImage bg2;
 PImage bg3;
+
+// int x,y
 int bg1x;
-
-
 int bg2x;
-
 int bg3x;
 
 int tsx;
@@ -51,30 +52,34 @@ void setup(){
 }
 
 void draw(){
- 
-  bg2x = bg1x - 636;
-  bg3x = bg2x - 636;
-  bg1x = (bg1x += 3) % 1280;
+
+
+// BG
   image(bg1,bg1x,0);
-  
+    bg1x = (bg1x += 3) % 1280;
   
   image(bg2,bg2x,0);
-  
+    bg2x = bg1x - 636;
   image(bg1,bg3x,0);
+    bg3x = bg2x - 636;
   
   
   
-  
-  
+  // HP
   rectMode(CENTER);
   fill(255,0,0);
   rect(109,15,195,25);
-  
+  image(HP,3,3);
+  // FT
   image(FT,580,150);
   x = (x += 5) % width;
-  image(EM,x + 3,y);
+  
+  // EM
+  image(EM,x+3,y);
+  
+  //TS
   image(TS,tsx,tsy);
-  image(HP,3,3);
+  
  
    
 }
