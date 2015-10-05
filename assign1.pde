@@ -19,7 +19,7 @@ int y;
 
 
 void setup(){
-  size(641,482);
+  size(640,480);
   
   // em 
   EM = loadImage("img/enemy.png");
