@@ -6,11 +6,12 @@ PImage TS;
 PImage HP;
 PImage bg1;
 PImage bg2;
+PImage bg3;
 
 // int x,y
 int bg1x;
 int bg2x;
-
+int bg3x;
 
 int tsx;
 int tsy;
@@ -45,7 +46,7 @@ void setup(){
   
   bg2 = loadImage("img/bg2.png");
   
-  
+  bg3 = loadImage("img/bg1.png");
   
   
 }
@@ -59,7 +60,8 @@ void draw(){
   
   image(bg2,bg2x,0);
     bg2x = bg1x - 636;
-  
+  image(bg1,bg3x,0);
+    bg3x = bg2x - 636;
   
   
   
